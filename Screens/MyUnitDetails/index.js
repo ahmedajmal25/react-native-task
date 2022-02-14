@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, ScrollView, Image} from 'react-native';
-import {Card, CardItem, Button} from 'native-base';
+import {Card, CardItem, Button, Icon} from 'native-base';
 import * as Progress from 'react-native-progress';
 
 const MyUnitDetails = () => {
@@ -99,14 +99,16 @@ const MyUnitDetails = () => {
 
           <View style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", alignContent:"center", marginTop:20}}>
               <Button  style={{display:"flex", justifyContent:"center", alignItems:"center", alignContent:"center", marginTop:20, backgroundColor:"white"}}>
-                  <Text>
+                  <Text style={{width: 140,paddingLeft:20, justifyContent:"center"}}>
                       View Payment Plan
                   </Text>
+                  <Icon style={{color: "black"}}  name="arrowright" type="AntDesign" />
               </Button>
               <Button style={{display:"flex", justifyContent:"center", alignItems:"center", alignContent:"center", marginTop:20, backgroundColor:"white"}}>
-                  <Text>
-                      View Payment Plan
+                  <Text style={{width: 160,paddingLeft:20, justifyContent:"center"}}>
+                      View Paid Installments
                   </Text>
+                  <Icon style={{color: "black", width:160}} name="arrowright" type="AntDesign" />
               </Button>
 
           </View>

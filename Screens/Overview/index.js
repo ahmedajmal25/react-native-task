@@ -8,7 +8,7 @@ import {
   ContributionGraph,
   StackedBarChart,
 } from 'react-native-chart-kit';
-import {Card, CardItem} from 'native-base';
+import {Button, Card, CardItem} from 'native-base';
 import {Dimensions} from 'react-native';
 
 const OverView = () => {
@@ -57,6 +57,24 @@ const OverView = () => {
                     4 units left
                 </Text>
           
+            </View>
+
+            <View style={{display:"flex", flexDirection:"row", padding:5, width:"100%"}}>
+                <Button style={{marginRight:5, justifyContent:"center", backgroundColor:"white"}}>
+                    <Text style={{fontSize:10, width:100}}>
+                        Food Court Shops
+                    </Text>
+                </Button>
+                <Button style={{marginRight:5, justifyContent:"center", backgroundColor:"white"}}>
+                    <Text style={{fontSize:10, width:140}}>
+                        Residential Appartments
+                    </Text>
+                </Button>
+                <Button style={{ justifyContent:"center", backgroundColor:"white"}}>
+                    <Text style={{fontSize:10,  width:100}}>
+                        Retail Shops
+                    </Text>
+                </Button>
             </View>
 
             <BarChart
